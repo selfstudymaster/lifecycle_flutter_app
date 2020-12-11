@@ -14,15 +14,15 @@
 /* ======================================================================= */
 【ざっくりした流れ】
 
-01. GitHubに新規「リモートリポジトリ(R)」作成
-02. ローカルに新規「flutterプロジェクト(D)」作成
-03. flutterプロジェクト(D)直下に「ローカルリポジトリ(L)」作成
+01. GitHubにてsettingにてmain をmaster に変更後、新規「リモートリポジトリ(R)」作成
+02. ターミナルにてgit clone URL R.clone でリモートリポジトリのクローン(R.clone)をローカルに作成
+03. 02にて作成したR.cloneディレクトリ直下に新規「flutterプロジェクト(D)」を作成
 04. ローカルで「SSH鍵」作成(cd ~/.ssh)
 05. Githubに鍵登録
 06. cd D
 07. git add --dry-run . //確認
 08. git add . 
-09. git commit -a -m "initial"
+09. git commit -a -m "This is the first commit"
 10. git remote set-url origin https://ユーザー名@github.com/ユーザー名/R.git
 11. git push origin main //エラーでる
 12. git push origin master
