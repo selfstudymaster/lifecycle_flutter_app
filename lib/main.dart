@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
   } // build
 } // StatelessWidget
 
+// ランダムに英単語を自動生成するRandomWordsStateクラスの定義
 class RandomWordsState extends State<RandomWords> {
   final _suggestions = <WordPair>[];
   final _biggerFont = const TextStyle(fontSize: 18);
